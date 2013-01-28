@@ -31,10 +31,10 @@ Name: Well-formed link rel (in CAPS)
 Link: rel=openid.server href=http://www.myopenid.com/server
 
 <HTML>
-  <HEAD>
-    <LINK REL="openid.server"
-          HREF="http://www.myopenid.com/server" />
-  </HEAD>
+	<HEAD>
+		<LINK REL="openid.server"
+					HREF="http://www.myopenid.com/server" />
+	</HEAD>
 </HTML>
 
 
@@ -547,10 +547,10 @@ Name: Well-formed link rel="openid.server"
 Link: rel=openid.server href=http://www.myopenid.com/server
 
 <html>
-  <head>
-    <link rel="openid.server"
-          href="http://www.myopenid.com/server" />
-  </head>
+	<head>
+		<link rel="openid.server"
+					href="http://www.myopenid.com/server" />
+	</head>
 </html>
 
 
@@ -559,8 +559,8 @@ Link: rel=openid.server href=http://www.myopenid.com/server
 Link: rel=openid.delegate href=http://example.myopenid.com/
 
 <html><head><link rel="openid.server"
-                  href="http://www.myopenid.com/server" />
-            <link rel="openid.delegate" href="http://example.myopenid.com/" />
+									href="http://www.myopenid.com/server" />
+						<link rel="openid.delegate" href="http://example.myopenid.com/" />
 </head></html>
 
 
@@ -569,21 +569,21 @@ Link: rel=stylesheet href=http://www.livejournal.com/~serotta/res/319998/stylesh
 Link: rel=openid.server href=http://www.livejournal.com/openid/server.bml
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+					"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <link rel="stylesheet"
-          href="http://www.livejournal.com/~serotta/res/319998/stylesheet?1130478711"
-          type="text/css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="foaf:maker"
-          content="foaf:mbox_sha1sum '12f8abdacb5b1a806711e23249da592c0d316260'" />
-    <meta name="robots" content="noindex, nofollow, noarchive" />
-    <meta name="googlebot" content="nosnippet" />
-    <link rel="openid.server"
-          href="http://www.livejournal.com/openid/server.bml" />
-    <title>Brian</title>
-  </head>
+	<head>
+		<link rel="stylesheet"
+					href="http://www.livejournal.com/~serotta/res/319998/stylesheet?1130478711"
+					type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="foaf:maker"
+					content="foaf:mbox_sha1sum '12f8abdacb5b1a806711e23249da592c0d316260'" />
+		<meta name="robots" content="noindex, nofollow, noarchive" />
+		<meta name="googlebot" content="nosnippet" />
+		<link rel="openid.server"
+					href="http://www.livejournal.com/openid/server.bml" />
+		<title>Brian</title>
+	</head>
 
 
 Name: non-ascii (Latin-1 or UTF8)

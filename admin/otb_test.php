@@ -8,12 +8,12 @@ function pass1()
 }
 
 function fail2(
-   ) {
+	 ) {
 
 }
 
 function pass2(
-   )
+	 )
 {
 }
 

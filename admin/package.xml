@@ -8,17 +8,17 @@
  <license>%(license_name)s</license>
  %(maintainers)s
  <release>
-  <version>%(version)s</version>
-  <date>%(date)s</date>
-  <state>%(release_stability)s</state>
-  <notes>
-  <![CDATA[
-  %(release_notes)s
-  ]]>
-  </notes>
-  %(contents_version_1)s
+	<version>%(version)s</version>
+	<date>%(date)s</date>
+	<state>%(release_stability)s</state>
+	<notes>
+	<![CDATA[
+	%(release_notes)s
+	]]>
+	</notes>
+	%(contents_version_1)s
  </release>
  <deps>
-  <dep type="php" rel="ge" version="4.3.0" />
+	<dep type="php" rel="ge" version="4.3.0" />
  </deps>
 </package>

@@ -51,25 +51,25 @@ found
 found
 <!-- hex entity -->
 <html>
-  <head>
-    <meta http-equiv="X-XRDS-Location" content="&#x66;ound">
-  </head>
+	<head>
+		<meta http-equiv="X-XRDS-Location" content="&#x66;ound">
+	</head>
 </html>
 
 found
 <!-- decimal entity -->
 <html>
-  <head>
-    <meta http-equiv="X-XRDS-Location" content="&#102;ound">
-  </head>
+	<head>
+		<meta http-equiv="X-XRDS-Location" content="&#102;ound">
+	</head>
 </html>
 
 /
 <!-- hex entity -->
 <html>
-  <head>
-    <meta http-equiv="X-XRDS-Location" content="&#x2f;">
-  </head>
+	<head>
+		<meta http-equiv="X-XRDS-Location" content="&#x2f;">
+	</head>
 </html>
 
 
@@ -82,13 +82,13 @@ EOF
 None
 <!-- No meta, just standard HTML -->
 <html>
-  <head>
-    <title>A boring document</title>
-  </head>
-  <body>
-    <h1>A boring document</h1>
-    <p>There's really nothing interesting about this</p>
-  </body>
+	<head>
+		<title>A boring document</title>
+	</head>
+	<body>
+		<h1>A boring document</h1>
+		<p>There's really nothing interesting about this</p>
+	</body>
 </html>
 
 EOF
@@ -114,23 +114,23 @@ None
 None
 <!-- <meta> is inside comment -->
 <html>
-  <head>
-    <!--<meta http-equiv="X-XRDS-Location" content="found">-->
-  </head>
+	<head>
+		<!--<meta http-equiv="X-XRDS-Location" content="found">-->
+	</head>
 </html>
 
 None
 <!-- <meta> is inside of <body> -->
 <html>
-  <head>
-    <title>Someone's blog</title>
-  </head>
-  <body>
-    <h1>My blog</h1>
-    <p>This is my blog</p>
-    <h2>Comments</h2>
-    <p><meta http-equiv="X-XRDS-Location" content="found"></p>
-  </body>
+	<head>
+		<title>Someone's blog</title>
+	</head>
+	<body>
+		<h1>My blog</h1>
+		<p>This is my blog</p>
+		<h2>Comments</h2>
+		<p><meta http-equiv="X-XRDS-Location" content="found"></p>
+	</body>
 </html>
 
 None

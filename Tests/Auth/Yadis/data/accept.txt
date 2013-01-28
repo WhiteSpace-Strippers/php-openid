@@ -1,8 +1,8 @@
 # Accept: [Accept: header value from RFC2616,
-#     http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html]
+#		 http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html]
 # Available: [whitespace-separated content types]
 # Expected: [Accept-header like list, containing the available content
-#     types with their q-values]
+#		 types with their q-values]
 
 Accept: */*
 Available: text/plain

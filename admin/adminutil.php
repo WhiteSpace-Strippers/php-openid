@@ -9,14 +9,14 @@
  */
 function includeAdd($dir, $at_start=false)
 {
-    $path = ini_get('include_path');
-    if (strlen($path)) {
-        $newpath = $at_start ? "$dir:$path" : "$path:$dir";
-    } else {
-        $newpath = $dir;
-    }
+		$path = ini_get('include_path');
+		if (strlen($path)) {
+				$newpath = $at_start ? "$dir:$path" : "$path:$dir";
+		} else {
+				$newpath = $dir;
+		}
 
-    ini_set('include_path', $newpath);
+		ini_set('include_path', $newpath);
 }
 
 /**
@@ -24,7 +24,7 @@ function includeAdd($dir, $at_start=false)
  */
 function getParent()
 {
-    return dirname(dirname(realpath(__FILE__)));
+		return dirname(dirname(realpath(__FILE__)));
 }
 
 ?>

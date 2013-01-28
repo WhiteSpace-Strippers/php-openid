@@ -7,10 +7,10 @@
 tabs=$(./admin/findphp | xargs egrep -n '	' | sort)
 
 if [ ! -z "$tabs" ]
-    then
-    cat <<EOF 1>&2
+		then
+		cat <<EOF 1>&2
 Found tabs in:
 $tabs
 EOF
-    exit 1
+		exit 1
 fi

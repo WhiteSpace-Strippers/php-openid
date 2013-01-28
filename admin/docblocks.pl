@@ -5,22 +5,22 @@ use strict;
 my $filename = $ARGV[0];
 
 if (!$filename) {
-    print "Usage: docblocks.pl <filename>\n";
-    exit(1);
+		print "Usage: docblocks.pl <filename>\n";
+		exit(1);
 }
 
 my %allowed = ("" => 1,
-               "<?php" => 1);
+							 "<?php" => 1);
 
 open(HANDLE, "<", $filename) or die "Cannot open $filename\n";
 
 while (<HANDLE>) {
-    chomp;
+		chomp;
 
-    if ($_ =~ /\/\*\*/) {
-        exit(0);
-    } elsif (!$allowed{$_}) {
-        print $filename."\n";
-        exit(1);
-    }
+		if ($_ =~ /\/\*\*/) {
+				exit(0);
+		} elsif (!$allowed{$_}) {
+				print $filename."\n";
+				exit(1);
+		}
 }

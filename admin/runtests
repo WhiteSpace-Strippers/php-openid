@@ -5,44 +5,44 @@ cd $(dirname "$0")
 HERE=$PWD
 
 test_import () {
-    ./admin/checkimports
+		./admin/checkimports
 }
 
 test_syntax () {
-    ./admin/syntaxcheck
+		./admin/syntaxcheck
 }
 
 test_tabs () {
-    /usr/bin/env bash "$HERE/notabs"
+		/usr/bin/env bash "$HERE/notabs"
 }
 
 test_longlines () {
-    /usr/bin/env bash "$HERE/nolonglines"
+		/usr/bin/env bash "$HERE/nolonglines"
 }
 
 test_nobadbraces () {
-    /usr/bin/env bash "$HERE/nobadbraces"
+		/usr/bin/env bash "$HERE/nobadbraces"
 }
 
 test_nobadcase () {
-    /usr/bin/env bash "$HERE/nobadcase"
+		/usr/bin/env bash "$HERE/nobadcase"
 }
 
 test_opentag () {
-    /usr/bin/env bash "$HERE/open_tag"
+		/usr/bin/env bash "$HERE/open_tag"
 }
 
 test_docblocks () {
-    /usr/bin/env bash "$HERE/docblocks"
+		/usr/bin/env bash "$HERE/docblocks"
 }
 
 test_php () {
-    if uname -a | grep -i cygwin >/dev/null 2>/dev/null ; then
-        /usr/bin/env php "$(dirname "$0")/texttest.php" --insecure-rand \
-            $TEXTTEST_ARGS
-    else
-        /usr/bin/env php "$HERE/texttest.php" $TEXTTEST_ARGS
-    fi
+		if uname -a | grep -i cygwin >/dev/null 2>/dev/null ; then
+				/usr/bin/env php "$(dirname "$0")/texttest.php" --insecure-rand \
+						$TEXTTEST_ARGS
+		else
+				/usr/bin/env php "$HERE/texttest.php" $TEXTTEST_ARGS
+		fi
 }
 
 tests="syntax tabs longlines nobadbraces nobadcase opentag docblocks php import"
@@ -56,16 +56,16 @@ chmod +x ./admin/fixperms
 ./admin/fixperms
 
 for test_name in $tests
-  do
-  echo "Running test $test_name" 1>&2
-  if ! eval "test_$test_name"
-      then
-      failures="$failures $test_name"
-  fi
+	do
+	echo "Running test $test_name" 1>&2
+	if ! eval "test_$test_name"
+			then
+			failures="$failures $test_name"
+	fi
 done
 
 if [ ! -z "$failures" ]
-    then
-    echo "Failures in: $failures" 1>&2
-    exit 1
+		then
+		echo "Failures in: $failures" 1>&2
+		exit 1
 fi
